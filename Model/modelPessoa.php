@@ -1,14 +1,14 @@
 <?php
-require_once "pessoa.php";
+require_once "../Classes/pessoa.php";
 
 class ModelPessoa{
     private $pdo;
 
-    public function _construct(){
+    public function __construct(){
         $host = 'localhost';
-        $db = 'Pessoa';
+        $db = 'pessoa';
         $user = 'root';
-        $senha = 'root';
+        $senha = '';
         $charset = 'utf8mb4';
 
         $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
@@ -27,7 +27,7 @@ class ModelPessoa{
 
     public function create(Pessoa $pessoa){
         try{
-            $sql = "INSERT into Pessoa(nome, cpf, telefone) values (?,?,?)";
+            $sql = "INSERT INTO Pessoa(nome, cpf, telefone) VALUES (?,?,?)";
             $stmt = $this->pdo->prepare($sql);
             $stmt->execute([
                 $pessoa->getNome(),
