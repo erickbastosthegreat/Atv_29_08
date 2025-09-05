@@ -7,7 +7,7 @@ class Pessoa{
 
 
     public function getId(){
-        return $this->$id;
+        return $this->id;
     }
 
     public function setId($id){
@@ -15,7 +15,7 @@ class Pessoa{
     }
 
     public function getNome(){
-        return $this->$nome;
+        return $this->nome;
     }
 
     public function setNome($nome){
@@ -23,7 +23,7 @@ class Pessoa{
     }
 
     public function getCpf(){
-        return $this->$cpf;
+        return $this->cpf;
     }
 
     public function setCpf($cpf){
@@ -31,7 +31,7 @@ class Pessoa{
     }
 
     public function getTelefone(){
-        return $this->$telefone;
+        return $this->telefone;
     }
 
     public function setTelefone($telefone){

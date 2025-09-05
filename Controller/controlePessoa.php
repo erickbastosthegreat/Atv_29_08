@@ -1,6 +1,5 @@
 <?php
 require_once('../Model/modelPessoa.php');
-require_once('../Controller/controlePessoa.php');
 
 $acao = isset($_GET['acao']) ? $_GET['acao'] : '';
 

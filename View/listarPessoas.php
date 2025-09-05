@@ -43,6 +43,6 @@
         </tbody>
     </table>
     <br>
-    <a href="formulario.html">Voltar para o Cadastro</a>
+    <a href="/Atv_29_08/View/form.html">Voltar para o Cadastro</a>
 </body>
 </html>

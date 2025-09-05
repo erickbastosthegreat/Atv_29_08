@@ -8,7 +8,7 @@ class ModelPessoa{
         $host = 'localhost';
         $db = 'pessoa';
         $user = 'root';
-        $senha = '';
+        $senha = 'root';
         $charset = 'utf8mb4';
 
         $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
@@ -73,7 +73,7 @@ class ModelPessoa{
                 $pessoa->getNome(),
                 $pessoa->getCpf(),
                 $pessoa->getTelefone(),
-                $pessoa->geiId()
+                $pessoa->getId()
             ]);
             return true;
             }catch(PDOException $e){
@@ -92,7 +92,7 @@ class ModelPessoa{
             $stmt->execute([$id]);
             return true;
         }catch(PDOException $e){
-            return "Erro ao excluir:".$egetMessage();
+            return "Erro ao excluir:".$getMessage();
         }
     }
 
